@@ -137,14 +137,14 @@ public class SinglyLinkedList<E> {
         if (M.isEmpty()) {
             return;
         }
-        if (isEmpty()) {
-            head = M.head;
-            tail = M.tail;
+        if (this.isEmpty()) {
+            this.head = M.head;
+            this.tail = M.tail;
         } else {
-            tail.setNext(M.head);
-            tail = M.tail;
+            this.tail.setNext(M.head);
+            this.tail = M.tail;
         }
-        size += M.size();
+        this.size += M.size();
     }
 
     //6
